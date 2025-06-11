@@ -23,9 +23,9 @@ execute:
   cache: true
   freeze: auto
 
-filters:
-  - lightbox
-lightbox: auto
+# filters:
+#  - lightbox
+# lightbox: auto
 
 highlight-style: breezedark
 
