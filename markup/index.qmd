@@ -1,0 +1,16 @@
+---
+title: "Markup"
+---
+
+# Markup Overview
+
+This section covers various markup languages and their applications.
+
+## Topics
+
+- HTML5 fundamentals
+- CSS3 styling
+- Markdown syntax
+- XML structure
+- JSON format
+- YAML configuration

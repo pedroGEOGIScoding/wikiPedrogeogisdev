@@ -1,7 +1,64 @@
 ---
-title: "wikiPedrogeogisdev"
+format:
+  html:
+    toc: false
+repo-actions: false
 ---
 
-This is a Quarto website.
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Roboto" />
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+<style>
+
+.animated-text {
+  font-size: 90px;
+  color: #000;
+  font-family; 'Roboto';
+  text-align: center;
+}
+
+@keyframes letterAnimation {
+  0% { opacity: 0; transform: translateY(-10px); }
+  10% { opacity: 1; transform: translateY(0); }
+  100% { opacity: 0; transform: translateY(10px); }
+}
+
+#spin {
+  color:white;
+}
+#spin:after {
+  content:"";
+  padding: 15px;
+  border-radius: 20px;
+  animation: spin 16s linear infinite;
+}
+@keyframes spin {
+  0% { content: "JAVA";background-color:blue;}
+  10% { content:"REACT"; }
+  18% { content:"SPRING BOOT"; }
+  23% { content: "UML"; }
+  30% { content:"BASH"; }
+  36% { content:"MINDSET"; }
+  43% { content:"SCRUM";}
+  50% { content: "LINUX"; }
+  62% { content: "API REST"; }
+  74% { content: "DEVOPS"; }
+  86% { content: "AWS"; }
+  95% { content: "MARKDOWN"; }
+  100% { content: "QUARTO";background-color: red; }
+}
+
+
+</style>
+
+::: {.column-screen}
+
+<div class="animated-text">
+<p>Code </br><b><span id="spin"></span></b></br>Learn</p>
+</div>
+
+:::
+
+<div style="text-align:center;color:grey">
+
+
+</br></br>
