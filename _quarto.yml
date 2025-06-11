@@ -33,7 +33,7 @@ editor:
     render-on-save: true
 
 website:
-  title: albertprofe wiki
+  title: Pedro GEOGIS wiki
   favicon: /images/home/favicon.ico
   page-navigation: true
   back-to-top-navigation: true
@@ -41,9 +41,9 @@ website:
   #cookie-consent:
   #  type: express
   #  style: headline
-  #  palette: dark
+  #  palette: dark  
 
-  repo-url: https://github.com/Albertprofe/wiki
+  repo-url: https://github.com/pedrogeogiscoding/wikiPedrogeogisdev
   repo-actions: [edit, issue]
   repo-branch: master
   repo-link-target: '_blank'
