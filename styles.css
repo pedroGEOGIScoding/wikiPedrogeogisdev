@@ -3,6 +3,129 @@
 /* @import "w3.css" */
 @import "stylesTabs.css";
 
+/* Custom styling for envelope icon in navbar to match toggle dark mode button */
+.navbar .quarto-navbar-tools .nav-link[href^="mailto:"] {
+    padding: 0.4rem 0.8rem;
+    margin-right: 0.5rem;
+    border-radius: 2rem;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem !important; /* Much larger font size to match search button */
+    width: 56px !important; /* Much larger width to match search button */
+    height: 56px !important; /* Much larger height to match search button */
+}
+
+.navbar .quarto-navbar-tools .nav-link[href^="mailto:"] i.bi {
+    font-size: 2rem !important; /* Much larger icon */
+    transform: scale(1.5); /* Scale up the icon significantly */
+}
+
+.navbar .quarto-navbar-tools .nav-link[href^="mailto:"]:hover {
+    background-color: rgba(var(--bs-primary-rgb), 0.1);
+    transform: scale(1.05);
+}
+
+/* Make dark mode toggle button as big as search button */
+.navbar .quarto-navbar-tools .quarto-dark-toggle {
+    font-size: 2rem !important; /* Much larger font size to match search button */
+    width: 56px !important; /* Much larger width to match search button */
+    height: 56px !important; /* Much larger height to match search button */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.4rem 0.8rem;
+}
+
+.navbar .quarto-navbar-tools .quarto-dark-toggle i.bi {
+    font-size: 2rem !important; /* Much larger icon */
+    transform: scale(1.5); /* Scale up the icon significantly */
+}
+
+/* Adjust size of search icon/button to match other navbar icons */
+.aa-SubmitIcon,
+svg[class*="SubmitIcon"] {
+    width: 28px !important;
+    height: 28px !important;
+    transform: scale(1.2);
+}
+
+/* Target the search button container */
+#quarto-search .aa-DetachedSearchButton {
+    padding: 0.35rem !important;
+    width: auto !important;
+    height: auto !important;
+    transform: scale(1);
+}
+
+/* Comprehensive fix for all viewport sizes */
+/* This applies to all screen sizes */
+.navbar .quarto-navbar-tools {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    flex-wrap: nowrap !important;
+    justify-content: flex-end !important;
+}
+
+/* Ensure the icons don't wrap and maintain inline display */
+.navbar .quarto-navbar-tools i.bi {
+    display: inline-block !important;
+}
+
+/* Additional fixes for smaller viewports */
+@media (max-width: 991.98px) {
+    /* Force horizontal layout for navbar tools */
+    .navbar .quarto-navbar-tools {
+        position: fixed !important;
+        top: 0 !important;
+        right: 60px !important; /* Position to the left of the search button */
+        height: 56px !important; /* Match navbar height */
+        z-index: 1031 !important; /* Ensure it's above other elements */
+        padding-top: 8px !important; /* Vertical alignment adjustment */
+    }
+    
+    /* Style the envelope icon */
+    .navbar .quarto-navbar-tools .nav-link[href^="mailto:"] {
+        display: inline-flex !important;
+        margin-right: 10px !important;
+        order: 1 !important;
+    }
+    
+    /* Style the dark mode toggle */
+    .navbar .quarto-navbar-tools .quarto-dark-toggle {
+        display: inline-flex !important;
+        order: 2 !important;
+    }
+    
+    /* Maintain position when drawer is open */
+    body.quarto-sidebar-show .navbar .quarto-navbar-tools {
+        transform: none !important;
+    }
+    
+    /* Ensure these elements are never stacked vertically */
+    .navbar .quarto-navbar-tools > * {
+        float: left !important;
+        clear: none !important;
+    }
+}
+
+/* Medium viewport specific fixes */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .navbar .quarto-navbar-tools {
+        display: flex !important;
+        flex-direction: row !important;
+    }
+}
+
+/* Extra small viewport specific fixes */
+@media (max-width: 575.98px) {
+    .navbar .quarto-navbar-tools {
+        right: 50px !important; /* Adjust position for very small screens */
+    }
+}
+
 .caption{
    text-align: center;
 }

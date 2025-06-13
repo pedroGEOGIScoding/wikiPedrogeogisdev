@@ -52,7 +52,10 @@ website:
     background: secondary
     style: "floating"
     search: true
-    
+    tools:
+      - icon: envelope
+        href: "mailto:pedromartinezduran@gmail.com"
+        aria-label: "Email"
     
     right:
       - text: Home
